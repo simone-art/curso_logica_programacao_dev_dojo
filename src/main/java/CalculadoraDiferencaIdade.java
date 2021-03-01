@@ -8,9 +8,9 @@ public class CalculadoraDiferencaIdade {
     */
 
     public static void main (String [] args){
-        int idade1 = 20;
-        int idade2 = 10;
-        int diferenca = idade1 - idade2;
-        System.out.println("A diferença entre ambas idade é de: " + diferenca);
+        int firstAge = 20;
+        int secondAge = 10;
+        int ageDifference = firstAge - secondAge;
+        System.out.println("A diferença entre ambas idade é de: " + ageDifference);
     }
 }
