@@ -1,5 +1,10 @@
 public class PrimeiroPrograma {
 
+/*
+Comentar é uma boa prática, mas um bom código não precisa de comentário
+Comentário devería ser para explicar algo muito específico
+*/
+
     public static void main (String []args){
 
         //Variável tem que ser inicializada, quer dizer tem que ter um valor.
@@ -8,4 +13,6 @@ public class PrimeiroPrograma {
         int idade = 35;
         System.out.println("A idade da pessoa é: " + idade);
     }
+
+
 }
