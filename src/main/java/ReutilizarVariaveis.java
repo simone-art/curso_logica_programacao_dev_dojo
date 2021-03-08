@@ -11,16 +11,25 @@
 public class ReutilizarVariaveis {
     public static void main(String[] args) {
 
-        double salario = 2000;
-        int porcentagem = 5;
-        double resultado = salario * porcentagem / 100;
-        if(porcentagem == 30){
-            resultado = salario * porcentagem / 100;
-        }else if(porcentagem == 15){
-            resultado = salario * 15 / 100;
-        }else if(porcentagem == 5){
-            resultado = salario * 5 / 100;
-        }
-        System.out.println("O resultado é: " + resultado);
+//        double salario = 2000;
+//        int porcentagem = 5;
+//        double resultado = salario * porcentagem / 100;
+//        if(porcentagem == 30){
+//            resultado = salario * porcentagem / 100;
+//        }else if(porcentagem == 15){
+//            resultado = salario * 15 / 100;
+//        }else if(porcentagem == 5){
+//            resultado = salario * 5 / 100;
+//        }
+//        System.out.println("O resultado é: " + resultado);
+//    }
+
+        double salario = 5000;
+        double resultado = salario * 0.3;
+        System.out.println("30% do salário é: " + resultado);
+        resultado = salario * 0.15;
+        System.out.println("15% do salário é: " + resultado);
+        resultado = salario * 0.05;
+        System.out.println("5% do salário é: " + resultado);
     }
 }
