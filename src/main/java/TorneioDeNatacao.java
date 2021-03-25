@@ -12,17 +12,22 @@ public class TorneioDeNatacao {
 
     public static void main(String[] args) {
 
-        String nomes = "Mariana";
-        int idades = 19;
+        String[] nomes = new String[4];
+        nomes[0] = "Simone";
+        nomes[1] = "Pedro";
+        nomes[2] = "Juan";
+        nomes[3] = "Nelva";
 
-          if( idades <= 10){
-              System.out.println(nomes + ", você pertence a categoría infantil");
-          }else if(idades > 10 && idades <= 15){
-              System.out.println( nomes + ", você pertence a categoría juvenil");
-          }else if(idades > 16 && idades <= 19){
-              System.out.println(nomes + " , você pertence a categoría Pre-Adulto");
-          }else if(idades > 20){
-              System.out.println(nomes+ ", você pertence a categoría adulto");
-          }
+        int[] idades = new int[4];
+        idades[0] = 10;
+        idades[1] = 15;
+        idades[2] = 18;
+        idades[3] = 20;
+
+        //System.out.println("Os nomes da lista são: " + nomes[0] + nomes[1] + nomes[2]);
+        System.out.println(nomes[0] + " com " + idades[0] + " anos de idade " + "participará da categoria infantil");
+        System.out.println(nomes[1] + " com " + idades[1] + " anos de idade " + "participará da categoria juvenil");
+        System.out.println(nomes[2] + " com " + idades[2] + " anos de idade " + "participará da categoria pre-adulto");
+        System.out.println(nomes[3] + " com " + idades[3] + " anos de idade " + "participará da categoria adulto");
     }
 }
