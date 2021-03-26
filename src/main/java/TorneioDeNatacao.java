@@ -18,56 +18,24 @@ public class TorneioDeNatacao {
         nomes[2] = "Juan";
         nomes[3] = "Nelva";
 
-        int[] idades = new int[4];
-        idades[0] = 10;
-        idades[1] = 15;
-        idades[2] = 18;
-        idades[3] = 20;
+        Scanner scanner = new Scanner(System.in);
 
-        //System.out.println("Os nomes da lista são: " + nomes[0] + nomes[1] + nomes[2]);
-//        System.out.println(nomes[0] + " com " + idades[0] + " anos de idade " + "participará da categoria infantil");
-//        System.out.println(nomes[1] + " com " + idades[1] + " anos de idade " + "participará da categoria juvenil");
-//        System.out.println(nomes[2] + " com " + idades[2] + " anos de idade " + "participará da categoria pre-adulto");
-//        System.out.println(nomes[3] + " com " + idades[3] + " anos de idade " + "participará da categoria adulto");
+        System.out.print("Digite a sua idade: ");
+        int idades = scanner.nextInt();
 
-        if (idades[0] <= 10) {
-            System.out.println(nomes[0] + ", participará da categoria infantil");
-        } else if (idades[0] >= 11 && idades[0] <= 15) {
-            System.out.println(nomes[0] + ", participará da categoria Juvenil");
-        } else if (idades[0] >= 16 && idades[0] <= 19) {
-            System.out.println(nomes[0] + ", participará da categoria Pre-Adulto");
-        } else if (idades[0] >= 20) {
-            System.out.println(nomes[0] + ", participará da categoria Adulto");
-        }
+       Boolean categoriaInfantil = (idades <= 10) && (idades > 0);
+       Boolean categoriaJuvenil = (idades > 10) && (idades <= 15);
+       Boolean categoriaPreAdulto = (idades > 16) && (idades <= 19);
+       Boolean categoriaAdulto = idades >= 20;
 
-        if (idades[1] <= 10) {
-            System.out.println(nomes[1] + ", participará da categoria infantil");
-        } else if (idades[1] >= 11 && idades[1] <= 15) {
-            System.out.println(nomes[1] + ", participará da categoria Juvenil");
-        } else if (idades[1] >= 16 && idades[1] <= 19) {
-            System.out.println(nomes[1] + ", participará da categoria Pre-Adulto");
-        } else if (idades[1] >= 20) {
-            System.out.println(nomes[1] + ", participará da categoria Adulto");
-        }
-
-        if (idades[2] <= 10) {
-            System.out.println(nomes[2] + ", participará da categoria infantil");
-        } else if (idades[2] >= 11 && idades[2] <= 15) {
-            System.out.println(nomes[2] + ", participará da categoria Juvenil");
-        } else if (idades[2] >= 16 && idades[2] <= 19) {
-            System.out.println(nomes[2] + ", participará da categoria Pre-Adulto");
-        } else if (idades[2] >= 20) {
-            System.out.println(nomes[2] + ", participará da categoria Adulto");
-        }
-
-        if (idades[3] <= 10) {
-            System.out.println(nomes[3] + ", participará da categoria infantil");
-        } else if (idades[3] >= 11 && idades[3] <= 15) {
-            System.out.println(nomes[3] + ", participará da categoria Juvenil");
-        } else if (idades[3] >= 16 && idades[3] <= 19) {
-            System.out.println(nomes[3] + ", participará da categoria Pre-Adulto");
-        } else if (idades[3] >= 20) {
-            System.out.println(nomes[3] + ", participará da categoria Juvenil");
-        }
+       if(categoriaInfantil){
+           System.out.println(nomes[0] + ", participará da categoria infantil");
+       }else if(categoriaJuvenil){
+           System.out.println(nomes[0] + ", participará da categoria Juvenil");
+       }else if(categoriaPreAdulto){
+           System.out.println(nomes[0] + ", participará da categoria Pre-Adulto");
+       }else if(categoriaAdulto){
+           System.out.println(nomes[0] + ", participará da categoria Adulto");
+       }
     }
 }
