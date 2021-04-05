@@ -12,15 +12,17 @@ public class TorneioDeNatacao {
 
     public static void main(String[] args) {
 
-        String[] nomes = new String[4];
-        nomes[0] = "Simone";
-        nomes[1] = "Pedro";
-        nomes[2] = "Juan";
-        nomes[3] = "Nelva";
+//        String[] nomes = new String[4];
+//        nomes[0] = "Simone";
+//        nomes[1] = "Pedro";
+//        nomes[2] = "Juan";
+//        nomes[3] = "Nelva";
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite a sua idade: ");
+        System.out.print("Digite o seu nome: ");
+        String nome = scanner.nextLine();
+        System.out.print("Digie a sua idade: ");
         int idades = scanner.nextInt();
 
        Boolean categoriaInfantil = (idades <= 10) && (idades > 0);
@@ -29,13 +31,13 @@ public class TorneioDeNatacao {
        Boolean categoriaAdulto = idades >= 20;
 
        if(categoriaInfantil){
-           System.out.println(nomes[0] + ", participará da categoria infantil");
+           System.out.println(nome + ", participará da categoria infantil");
        }else if(categoriaJuvenil){
-           System.out.println(nomes[0] + ", participará da categoria Juvenil");
+           System.out.println(nome + ", participará da categoria Juvenil");
        }else if(categoriaPreAdulto){
-           System.out.println(nomes[0] + ", participará da categoria Pre-Adulto");
+           System.out.println(nome + ", participará da categoria Pre-Adulto");
        }else if(categoriaAdulto){
-           System.out.println(nomes[0] + ", participará da categoria Adulto");
+           System.out.println(nome + ", participará da categoria Adulto");
        }
     }
 }
