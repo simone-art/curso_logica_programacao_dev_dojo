@@ -32,7 +32,7 @@ public class CadastroMilitar {
             System.out.println("Alistamento não permitido");
         }else if(sexo.equals("F") && idade >= 18) {
             Scanner scanner2 = new Scanner(System.in);
-            System.out.println("Você deseja se alistar? Digite a sua resposta");
+            System.out.println("Você deseja se alistar? Digite a sua resposta: ");
             String respostaAlistamento = scanner2.nextLine();
         if(respostaAlistamento.equals("Sim")){
             System.out.println("Deseja se alistar!");
