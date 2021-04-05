@@ -9,6 +9,7 @@ Se o sexo for femenino  e a idade igual o maior a 18, o sistema deverá pregunta
 Se o sexo for femenino  e a idade menor 18, o sistema deverá imprimir: alistamento não permitido
  */
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class CadastroMilitar {
@@ -29,8 +30,16 @@ public class CadastroMilitar {
 
         if(sexo.equals("F") && idade < 18){
             System.out.println("Alistamento não permitido");
-        }else if(sexo.equals("F") && idade >= 18){
-            System.out.println("Você deseja se alistar?");
+        }else if(sexo.equals("F") && idade >= 18) {
+            Scanner scanner2 = new Scanner(System.in);
+            System.out.println("Você deseja se alistar? Digite a sua resposta");
+            String respostaAlistamento = scanner2.nextLine();
+        if(respostaAlistamento.equals("Sim")){
+            System.out.println("Deseja se alistar!");
+            }else if(respostaAlistamento.equals("Não")){
+            System.out.println("Não deseja se alistar!");
+           }
         }
     }
 }
+
