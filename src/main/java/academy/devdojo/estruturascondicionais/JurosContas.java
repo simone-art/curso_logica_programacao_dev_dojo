@@ -15,9 +15,13 @@ import java.util.Scanner;
 
 public class JurosContas {
     public static void main(String[] args) {
-        String conta = "CONTA_CORRENTE";
 
-        switch (conta){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite o seu tipo de conta: ");
+        String tipoDeConta = scanner.nextLine();
+        //String conta = "CONTA_CORRENTE";
+
+        switch (tipoDeConta){
             case "CONTA_POUPANCA":
                 System.out.println("CONTA_POUPANCA: 0.05%");
             break;
