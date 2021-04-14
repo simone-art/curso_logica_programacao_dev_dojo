@@ -11,18 +11,20 @@ public class Aula04ExercicioLogin {
 
         Scanner scanner = new Scanner(System.in);
 
-        while(exibirTelaLogin){
+        while (exibirTelaLogin) {
             System.out.print("Digite seu login: ");
             String loginDigitado = scanner.nextLine();
             System.out.print("Digite seu password: ");
             String passwordDigitado = scanner.nextLine();
 
-            if(login.equals(loginDigitado) && password.equals(passwordDigitado)){
+            if (login.equals(loginDigitado) && password.equals(passwordDigitado)) {
                 System.out.println("ACCESO CONCEDIDO");
                 exibirTelaLogin = false;
-            }else{
-                System.out.println("ACESSO NEGADO");
+                break;
             }
+            System.out.println("ACESSO NEGADO");
         }
+        System.out.println("PROGRAMA TERMINADO");
     }
 }
+
