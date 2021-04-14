@@ -10,7 +10,7 @@ public class Aula02Exercicio02 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite um número para mostrar a Tabuada: ");
         int numeroTabuada = scanner.nextInt();
-        for (int i = 1; i < 11; i++) {
+        for (int i = 1; i <= 10; i++) {
             int resultado = (i * numeroTabuada);
             System.out.println(i + " x " + numeroTabuada + " = " + resultado);
         }
