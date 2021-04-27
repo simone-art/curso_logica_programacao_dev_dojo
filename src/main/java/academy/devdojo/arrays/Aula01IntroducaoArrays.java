@@ -16,10 +16,8 @@ public class Aula01IntroducaoArrays {
         notas[1] = 8.0;
         notas[2] = 3.0;
         notas[3] = 5.0;
-
-        System.out.println(notas[0]);
-        System.out.println(notas[1]);
-        System.out.println(notas[2]);
-        System.out.println(notas[3]);
+        for(int i = 0; i <4; i++){
+            System.out.println(notas[i]);
+        }
     }
 }
